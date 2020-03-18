@@ -1,0 +1,278 @@
+body, html {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#top-section {
+    background-image: url("./images/Background-Final.jpg");
+    background-position: center top;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    height: 75vh;
+}
+
+#top-section .wrap {
+    margin: 0 13%;
+    padding-top: 4%;
+}
+
+#top-section .wrap > div {
+    width: 40%;
+    margin: 0 4%;
+    float: left;
+}
+
+#top-section .text {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+#top-section #form {
+    margin-top: 5%;
+    background-color: #0000005e;
+    padding: 2%;
+}
+
+#form input, #form select{
+    display: block;
+    margin: 2%;
+    padding: 0.8em;
+    width: 90%;
+    border-radius: .2em;
+    border: none;
+}
+
+#phone select {
+    width: 15%;
+    float: left;
+    padding: 0.7em;
+    color: #8a8787;
+    font: small-caption;
+    text-indent: -1px;
+}
+
+#phone .number {
+    width: 71%;
+    float: left;
+}
+
+#form .age-check > input {
+    width: 5%;
+    display: inline-block;
+    transform: scale(1.5);
+    float: left;
+}
+
+.age-check p {
+    width: 84%;
+    font-size: .7em;
+    color: #cac6c6;
+    font-family: roboto;
+    float: left;
+    margin-top: 0;
+}
+
+#form input[type="submit"] {
+    background-color: #FFC12B;
+    width: 95%;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+#top-section #form h2 {
+    margin: 5% auto;
+    width: 60%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+#top-section .text h1 {
+    font-size: 2.7em;
+    font-weight: 400;
+}
+
+#top-section .text p {
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: 0.29px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+#logo img {
+    width: 8em;
+}
+
+#bottom-section {
+    margin: 2% 13%;
+    height: 35vh;
+}
+
+#bottom-section article {
+    height: 100%;
+    width: 22%;
+    margin: 1%;
+    float: left;
+    border: solid 1px #cacaca4a;
+    border-radius: 2%;
+    -webkit-box-shadow: 0px 8px 3px -5px rgba(128,123,128,0.85);
+    -moz-box-shadow: 0px 8px 3px -5px rgba(128,123,128,0.85);
+    box-shadow: 0px 5px 6px -4px rgba(128,123,128,0.85);
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+#bottom-section article:hover {
+    box-shadow: none;
+}
+
+#bottom-section article img {
+    width: 100%;
+}
+
+#bottom-section article .text {
+    margin: 8%;
+    font-size: .85em;
+}
+
+#bottom-section article h2 {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0;
+    color: #000000;
+    margin-bottom: 0;
+    opacity: 1;
+}
+
+#bottom-section article p {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: smaller;
+    color: #616161;
+    opacity: 1;
+    margin-top: .2em;
+}
+
+@media screen and (max-width: 1250px){
+    #top-section .wrap {
+        margin: 0 10%;
+    }
+}
+
+@media screen and (max-width: 1130px){
+    #top-section .wrap {
+        margin: 0 7%;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    #top-section .wrap {
+        margin: 0 4%;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .text-mob {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #top-section .wrap {
+        margin: 0;
+    }
+
+    #top-section .wrap > div {
+        width: 90%;
+        margin: 0 3%;
+    }
+
+    .text-desk {
+        display: none;
+    }
+
+    #logo {
+        text-align: center;
+    }
+
+    #top-section {
+        background-size: 175vh;
+        height: 100vh;
+    }
+
+    #phone select {
+        text-indent: 50%;
+    }
+
+    #form .age-check > input {
+        margin-top: 1%;
+    }
+}
+
+@media screen and (max-width: 850px){
+    #bottom-section article {
+        height: 100%;
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 414px){
+    #phone select {
+        text-indent: 25%;
+        padding: 9px 0;
+    }
+
+    #top-section {
+        background-size: 210vh;
+        height: 110vh;
+    }
+
+    #bottom-section {
+        margin: 1%;
+    }
+
+    #bottom-section article {
+        height: 25em;
+        width: 97%;
+    }
+
+    #phone .number {
+        width: 68%;
+    }
+
+    #form input, #form select {
+        width: 87%;
+    }
+
+    #form .age-check > input {
+        margin-left: 3%;
+    }
+
+    #phone select {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    #top-section {
+        background-size: 294vh;
+        height: 153vh;
+    }
+}
+
+.alert {
+    color: red;
+    font-family: roboto;
+}
+
+.success {
+    color: green;
+    font-family: roboto;
+}
