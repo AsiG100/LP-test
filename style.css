@@ -230,8 +230,8 @@ body, html {
     }
 
     #top-section {
-        background-size: 210vh;
-        height: 110vh;
+        background-size: 96em;
+        height: 50em;
     }
 
     #bottom-section {
@@ -239,8 +239,23 @@ body, html {
     }
 
     #bottom-section article {
-        height: 25em;
+        height: 9em;
         width: 97%;
+        border: none;
+    }
+
+    #bottom-section article img {
+        width: 44%;
+        float: left;
+        height: 100%;
+        border-radius: .2em 0 0 .2em;
+    }
+
+    #bottom-section article .text {
+        margin: 0 0 0 3%;
+        font-size: .85em;
+        width: 50%;
+        float: left;
     }
 
     #phone .number {
@@ -258,12 +273,26 @@ body, html {
     #phone select {
         width: 15%;
     }
+
+    #bottom-section article {
+        -webkit-box-shadow: 0px 2px 7px -2px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 2px 7px -2px rgba(0,0,0,0.75);
+        box-shadow: 0px 2px 7px -2px rgba(0,0,0,0.75);
+    }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 360px){
     #top-section {
-        background-size: 294vh;
-        height: 153vh;
+        background-size: 104em;
+        height: 54em;
+    }
+
+    #bottom-section article .text {
+        font-size: .75em;
+    }
+
+    #bottom-section article {
+        height: 8em;
     }
 }
 
